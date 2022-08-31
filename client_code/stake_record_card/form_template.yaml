@@ -1,0 +1,182 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: GridPanel
+  properties: {}
+  name: grid_panel_1
+  layout_properties: {grid_position: 'JVWXSX,SMYMRK'}
+  components:
+  - type: ColumnPanel
+    properties: {role: card-blue, tooltip: '', border: '', foreground: 'theme:White',
+      visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: column_panel_1
+    layout_properties: {grid_position: 'YMHTGM,DXTPOA', row: DGPNMN, width_xs: 10,
+      col_xs: 1, width: 535.328}
+    components:
+    - type: DataGrid
+      properties:
+        role: null
+        columns:
+        - {id: ZOASCB, title: Column 2, data_key: column_2, $$hashKey: 'object:270261'}
+        - {id: GGRHLG, title: Column 1, data_key: column_1, $$hashKey: 'object:270319'}
+        auto_header: false
+        tooltip: ''
+        border: ''
+        foreground: ''
+        rows_per_page: 20
+        visible: true
+        wrap_on: never
+        show_page_controls: false
+        spacing_above: small
+        spacing_below: small
+        background: ''
+      name: data_grid_2
+      layout_properties: {grid_position: 'CHIPYT,SLCYQX'}
+      components:
+      - type: DataRowPanel
+        properties: {}
+        name: data_row_panel_1
+        layout_properties: {}
+        components:
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: Stake Balance, font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: none, italic: false, background: '',
+            bold: true, underline: false, icon: ''}
+          name: label_2_copy
+          layout_properties:
+            col_widths: {}
+            grid_position: JXKOBU,FVMAJM
+            row: STBXNE
+            width_xs: 4
+            col_xs: 0
+            width: 152
+            column: ZOASCB
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: Staked Until, font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: none, italic: false, background: '',
+            bold: true, underline: false, icon: ''}
+          name: label_2_copy_2
+          layout_properties:
+            col_widths: {}
+            grid_position: YWUEWL,UDZVIO
+            row: STBXNE
+            width_xs: 6
+            col_xs: 6
+            width: 152
+            column: GGRHLG
+      - type: DataRowPanel
+        properties: {}
+        name: data_row_panel_2
+        layout_properties: {}
+        components:
+        - type: Label
+          properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: '100,000,000', font_size: null, font: '', spacing_above: none,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_staked_amount
+          layout_properties: {row: WAPXQG, width_xs: 6, col_xs: 0, width: 152.005,
+            grid_position: 'VGKSDP,LMYENL', column: ZOASCB}
+        - type: Label
+          properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: Year 1, font_size: null, font: '', spacing_above: none,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_stake_end
+          layout_properties: {row: WAPXQG, width_xs: 4, col_xs: 8, width: 91.3368,
+            grid_position: 'HOMOWO,LVARPZ', column: GGRHLG}
+      - type: DataGrid
+        properties:
+          role: null
+          columns:
+          - {id: EMOVWX, title: Year, data_key: period, $$hashKey: 'object:43938',
+            width: 60, expand: false}
+          - {id: CFUPTK, title: Amount Served, data_key: amount, $$hashKey: 'object:43939',
+            width: '', expand: false}
+          - {id: IBSJQE, title: Total Staked, data_key: total, $$hashKey: 'object:43940',
+            width: '', expand: false}
+          auto_header: true
+          tooltip: ''
+          border: ''
+          foreground: theme:White
+          rows_per_page: 20
+          visible: false
+          wrap_on: never
+          show_page_controls: false
+          spacing_above: small
+          spacing_below: small
+          background: ''
+        name: data_grid_1
+        layout_properties: {row: MYQUOI, width_xs: 12, col_xs: 0, width: 576.684,
+          grid_position: 'HLAHIU,LUCARX'}
+        components:
+        - type: RepeatingPanel
+          properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
+            visible: true, spacing_above: none, spacing_below: none, item_template: stake_record_card.RowTemplate4,
+            background: ''}
+          name: repeating_panel_1
+          layout_properties: {}
+      - type: RepeatingPanel
+        properties: {spacing_above: none, spacing_below: none, item_template: stake_record_card.RowTemplate6}
+        name: repeating_panel_2
+        layout_properties: {}
+    - type: ColumnPanel
+      properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: ''}
+      name: flow_panel_manage
+      layout_properties: {grid_position: 'JWHTUE,EUZBUE'}
+      components:
+      - type: FlowPanel
+        properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
+          foreground: '', visible: true, spacing_above: small, spacing_below: small,
+          background: ''}
+        name: flow_panel_manage_1
+        layout_properties: {grid_position: 'ICSUKD,TREQLN', row: YDHNRS, width_xs: 4,
+          col_xs: 7}
+        components:
+        - type: Button
+          properties: {role: primary-color, align: center, tooltip: '', border: '',
+            enabled: true, foreground: '', visible: false, text: End Stake, font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#246BFD', bold: false, underline: false, icon: ''}
+          name: button_end_completed_stake
+          layout_properties: {}
+          event_bindings: {click: menu_click}
+        - type: Button
+          properties: {role: primary-color, align: center, tooltip: '', border: '',
+            enabled: true, foreground: '', visible: false, text: Extend Stake, font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#246BFD', bold: false, underline: false, icon: ''}
+          name: button_extend_stake
+          layout_properties: {}
+          event_bindings: {click: menu_click}
+        - type: Button
+          properties: {role: primary-color, align: center, tooltip: '', border: '',
+            enabled: true, foreground: '', visible: false, text: Restake, font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#246BFD', bold: false, underline: false, icon: ''}
+          name: button_restake_completed_stake
+          layout_properties: {}
+          event_bindings: {click: menu_click}
+        - type: Button
+          properties: {role: primary-color, align: center, tooltip: '', border: '',
+            enabled: true, foreground: '', visible: false, text: End Stake, font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#246BFD', bold: false, underline: false, icon: ''}
+          name: button_early_end_stake
+          layout_properties: {}
+          event_bindings: {click: menu_click}
+        - type: Button
+          properties: {role: primary-color, align: center, tooltip: '', border: '',
+            enabled: true, foreground: '', visible: false, text: View Rewards, font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#246BFD', bold: false, underline: false, icon: ''}
+          name: button_claim_rewards
+          layout_properties: {}
+          event_bindings: {click: menu_click}
+is_package: true

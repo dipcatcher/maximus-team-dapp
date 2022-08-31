@@ -1,0 +1,278 @@
+container: {type: ColumnPanel}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: PIOAQH,FHMQNG
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'JGXEIK,LGGXQE'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Average Daily T-Share Payout, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'GWWTZD,AYZPZY'}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ex. 6,
+        border: solid, enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: none, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {grid_position: 'TEFNEQ,KPQGAS'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX Price at End Stake, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: RJVVGG,UPDFBC
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ex. $1.00,
+        border: solid, enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: none, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: UOBSRT,RZJBXL
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Hedron Price at End Stake, font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_2
+      layout_properties:
+        col_widths: {}
+        grid_position: DHRDVT,NWPUFW
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ex. $0.01,
+        border: solid, enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: none, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1_copy_2
+      layout_properties:
+        col_widths: {}
+        grid_position: YBVCJY,RPDWDA
+    - type: Button
+      properties: {role: primary-color, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Submit, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: button_1
+      layout_properties: {grid_position: 'IXQCCP,XITNLV'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_3
+    layout_properties: {grid_position: 'JGXEIK,DWMLTO PQJIEX,IADTNN'}
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: MAXI Redemption Value, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_10
+      layout_properties:
+        col_widths: {}
+        grid_position: XZQJXS,UOULFM
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: $5.88, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_1_copy_12
+      layout_properties:
+        col_widths: {}
+        grid_position: HDZAGZ,OTFQXS
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Redeemable HEX, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_13
+      layout_properties:
+        col_widths: {}
+        grid_position: XPDQJR,QYSMVV
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '400,123 HEX', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'LEDJOG,DZUTRW'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Redeemable Hedron, font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_14
+      layout_properties:
+        col_widths: {}
+        grid_position: LZJYHU,ZYGQDK
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '1,201,542 HDRN', font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_2_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: IZSEVN,ZHUHYG
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: JGXEIK,DWMLTO FWOSCT,HRGXEJ
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Treasury Value, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_11
+      layout_properties:
+        col_widths: {}
+        grid_position: QRFDDI,WIHPXL
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '$1,094,212', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_1_copy_15
+      layout_properties:
+        col_widths: {}
+        grid_position: BYBRQX,BIXFFI
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: T-Shares, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_4
+      layout_properties:
+        col_widths: {}
+        grid_position: DTSVIA,BPXGAD
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '23,123', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_2
+      layout_properties:
+        col_widths: {}
+        grid_position: MCZCEB,JYEWOV
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: HEX Principle, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_3
+      layout_properties: {grid_position: 'GWWTZD,AYZPZY'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '1,201,542 HEX', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_3
+      layout_properties:
+        col_widths: {}
+        grid_position: KLHZVB,KPKBED
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: HEX Interest, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_5
+      layout_properties:
+        col_widths: {}
+        grid_position: XOEWVH,SAQWNL
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '+ 101,092 HEX', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_4
+      layout_properties:
+        col_widths: {}
+        grid_position: YKYAIS,CMCJFT
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Total HEX, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_6
+      layout_properties:
+        col_widths: {}
+        grid_position: GUEAUY,SLKAYL
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '1,240,003 HEX', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_5
+      layout_properties:
+        col_widths: {}
+        grid_position: TIAPNJ,KSNPFF
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Treasury HEX Value, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_7
+      layout_properties:
+        col_widths: {}
+        grid_position: FNENEC,WPSGSU
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '$988,912', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_6
+      layout_properties:
+        col_widths: {}
+        grid_position: GRKYYP,JKLCDE
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Mintable Hedron, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_8
+      layout_properties:
+        col_widths: {}
+        grid_position: CIBKDG,QZFXFK
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '142,201,542 HDRN', font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_2_copy_7
+      layout_properties:
+        col_widths: {}
+        grid_position: HMFKHP,EBLRZA
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Treasury Hedron Value, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_9
+      layout_properties:
+        col_widths: {}
+        grid_position: QRVAYG,DUCECN
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: '$523,001', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2_copy_8
+      layout_properties:
+        col_widths: {}
+        grid_position: CLBAHB,TXGZEB
+is_package: true

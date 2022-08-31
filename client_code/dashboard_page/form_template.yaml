@@ -1,0 +1,488 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Spacer
+  properties: {visible: true, spacing_above: small, spacing_below: small, height: '48',
+    tooltip: ''}
+  name: spacer_1
+  layout_properties:
+    col_widths: {}
+    grid_position: QMXMFS,THVTXA
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: IORCWQ,PIRHLB
+    full_width_row: false
+  components: []
+- type: ColumnPanel
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+  name: card_1_copy_3
+  layout_properties:
+    col_widths: {}
+    grid_position: GGGATV,EPQNDN
+  components:
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [Present Value, Future Value]
+      visible: false
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_1
+    layout_properties:
+      col_widths: {}
+      grid_position: AGMEOC,BIJOKJ
+      full_width_row: false
+    event_bindings: {change: drop_down_1_change}
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: panel_estimator
+    layout_properties: {grid_position: 'WYDHJR,IVHPUY'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Average Daily T-Share Payout, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_3
+      layout_properties: {grid_position: 'JJEJBQ,JVCXKX'}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ' ex.
+          6', border: solid, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: none, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_payout
+      layout_properties: {grid_position: 'GLYUAH,LIROAE'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX Price at End Stake, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_4
+      layout_properties:
+        col_widths: {}
+        grid_position: NDKEJR,SAGHGD
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ' ex.
+          $1.00', border: solid, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: none, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_hex_future_price
+      layout_properties:
+        col_widths: {}
+        grid_position: IBOQUS,ZPZYBQ
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Hedron Price at End Stake, font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: none, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy_5
+      layout_properties:
+        col_widths: {}
+        grid_position: YSWLKQ,LEQJNF
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: ' ex.
+          $0.01', border: solid, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: none, type: text, spacing_below: medium,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_hedron_price
+      layout_properties:
+        col_widths: {}
+        grid_position: OIJBPW,ZLJTGN
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: DSQFCV,KSZRKV
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_1
+    layout_properties: {grid_position: 'KIXMZA,YOCCCB'}
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Treasury Value, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'FLROMA,RTIFTV'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: $--, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_treasury_value_usd
+      layout_properties: {grid_position: 'XNAIFB,QUJURY'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: -- HEX, font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_treasury_value_hex
+      layout_properties: {grid_position: 'FRHMVE,YJVGBO'}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_2
+    layout_properties: {grid_position: 'KIXMZA,AWYDYN'}
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Your Redemption Value, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'RQQCRO,RHKMHS'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: $--, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_redemption_value_usd
+      layout_properties: {grid_position: 'BGCZMT,HKGXFP'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: -- MAXI (--% of Pool), font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_your_balance_maxi
+      layout_properties:
+        col_widths: {}
+        grid_position: XMLHHY,PSHRWQ
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_4
+    layout_properties: {grid_position: 'ASHSUE,ZKPEYP'}
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Backing per MAXI, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7
+      layout_properties: {grid_position: 'KUASLG,SPYZOZ'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: $--, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_backing_per_maxi_usd
+      layout_properties:
+        col_widths: {}
+        grid_position: BDTDGI,RZTBEG
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: -- HEX, font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_backing_per_maxi_hex
+      layout_properties:
+        col_widths: {}
+        grid_position: VZWEVT,LGRMTZ
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_5
+    layout_properties: {grid_position: 'ASHSUE,TAPAGZ'}
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: MAXI Market Price, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: VQVMXN,RLBONG
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: $--, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_maxi_market_price_usd
+      layout_properties:
+        col_widths: {}
+        grid_position: AUAAKG,TSPEHO
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 1 HEX, font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_maxi_market_price_hex
+      layout_properties:
+        col_widths: {}
+        grid_position: UVUDIK,SDEPRQ
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_4_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: UEEDXN,EBWEKW
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Minting Phase Start Day, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7_copy_2
+      layout_properties: {grid_position: 'KUASLG,SPYZOZ'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX day 865, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_backing_per_maxi_usd_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: BDTDGI,RZTBEG
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_4_copy_3
+    layout_properties:
+      col_widths: {}
+      grid_position: UEEDXN,BKWFAZ
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Current Day, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7_copy_4
+      layout_properties: {grid_position: 'KUASLG,SPYZOZ'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX day 865, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_current_day
+      layout_properties:
+        col_widths: {}
+        grid_position: BDTDGI,RZTBEG
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: medium, background: ''}
+    name: card_4_copy_2
+    layout_properties:
+      col_widths: {}
+      grid_position: UEEDXN,LJEIWZ
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Minting Phase End Day, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7_copy_3
+      layout_properties: {grid_position: 'KUASLG,SPYZOZ'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX day 879, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_backing_per_maxi_usd_copy_2
+      layout_properties:
+        col_widths: {}
+        grid_position: BDTDGI,RZTBEG
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: AHKAYX,MXRGEM
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Total Treasury HEX, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy
+      layout_properties: {grid_position: 'FLROMA,RTIFTV'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '881,403,964.13 HEX', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_total_treasury_hex
+      layout_properties: {grid_position: 'XNAIFB,QUJURY'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: incl. 0 accrued yield, font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_5_copy_2
+      layout_properties: {grid_position: 'FRHMVE,IMXFEW'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1_copy_2
+    layout_properties:
+      col_widths: {}
+      grid_position: AHKAYX,OJLRCH
+    components:
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Total Treasury Hedron, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy_2
+      layout_properties: {grid_position: 'FLROMA,RTIFTV'}
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 0 HDRN, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_4_copy_2
+      layout_properties: {grid_position: 'XNAIFB,QUJURY'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: incl. 0 from AMR bonuses, font_size: 12, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_5_copy_3
+      layout_properties: {grid_position: 'FRHMVE,YJVGBO'}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_3
+  layout_properties:
+    col_widths: {}
+    grid_position: AZYNCL,NQVJEY
+  components:
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_2
+    layout_properties: {grid_position: 'YSDVVH,RVJEDT'}
+    components:
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Total Supply, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_8
+      layout_properties: {grid_position: 'JCUSYD,YLQJXX'}
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '150,000,000 MAXI', font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: medium, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_maxi_supply
+      layout_properties:
+        col_widths: {}
+        grid_position: MRDDYH,PLCSUB
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_3
+    layout_properties: {grid_position: 'YSDVVH,JJMKFZ'}
+    components:
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: T-Shares est., font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_8_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: YNWVXA,TGRLDR
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '', font_size: null, font: '', spacing_above: none, icon_align: left,
+        spacing_below: medium, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
+      name: label_tshares
+      layout_properties:
+        col_widths: {}
+        grid_position: BNJTTC,QTBPMJ
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_4
+    layout_properties: {grid_position: 'WCTFXH,DLQIKP'}
+    components:
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Stake Start Day, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_8_copy_2
+      layout_properties:
+        col_widths: {}
+        grid_position: EQULBJ,VWBNLC
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: HEX Day 892 - 4/28/22, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: medium, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_stake_start
+      layout_properties:
+        col_widths: {}
+        grid_position: ZQKYVD,KVQEPJ
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_5
+    layout_properties: {grid_position: 'WCTFXH,FSXVSI'}
+    components:
+    - type: Label
+      properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Stake End Day, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_8_copy_3
+      layout_properties:
+        col_widths: {}
+        grid_position: GGUCCA,EITXWG
+    - type: Label
+      properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'HEX Day 6,447 - 4/28/37', font_size: null, font: '',
+        spacing_above: none, icon_align: left, spacing_below: medium, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_stake_end
+      layout_properties:
+        col_widths: {}
+        grid_position: CLFTFQ,MIDNVG
+  - type: Label
+    properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Contract Address, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: none, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_8_copy_10
+    layout_properties:
+      col_widths: {}
+      grid_position: MZHIAK,NFIBXX
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 0x...., font_size: null, font: '', spacing_above: none,
+      icon_align: left, spacing_below: medium, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_maxi_contract_address
+    layout_properties:
+      col_widths: {}
+      grid_position: ZVGZKT,QIWRMD
+is_package: true

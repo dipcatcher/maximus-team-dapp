@@ -1,0 +1,36 @@
+container: {type: DataRowPanel}
+components:
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: NBTZNA, title: Token, data_key: token, $$hashKey: 'object:159410'}
+    - {id: UBPTUE, title: Amount, data_key: claimable, $$hashKey: 'object:159411'}
+    - {id: UDIEGZ, title: Claimed, data_key: claimed, $$hashKey: 'object:159412'}
+    auto_header: true
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: false
+    wrap_on: never
+    show_page_controls: false
+    spacing_above: small
+    spacing_below: small
+    background: theme:Gray 800
+  name: data_grid_1
+  layout_properties: {column: null}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: stake_record_card.RowTemplate4.RowTemplate5}
+    name: repeating_panel_1
+    layout_properties: {}
+- type: Link
+  properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: cyan,
+    visible: true, text: ' ', font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: 'fa:expand'}
+  name: link_1
+  layout_properties: {column: EMOVWX}
+  event_bindings: {click: link_1_click}
+is_package: true

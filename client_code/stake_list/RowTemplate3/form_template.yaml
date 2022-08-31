@@ -1,0 +1,38 @@
+container:
+  type: DataRowPanel
+  properties: {role: top-border, align: left, tooltip: '', border: '', foreground: '',
+    auto_display_data: true, visible: true, font_size: null, font: '', spacing_above: none,
+    spacing_below: none, italic: false, background: '', bold: false, underline: false}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: column_panel_2
+  layout_properties: {column: AGUQLR}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {column: AGUQLR}
+  components: []
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: Manage Stake
+    border: ''
+    enabled: true
+    foreground: ''
+    items: ['']
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: white
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_menu
+  layout_properties: {column: FKRPTW}
+is_package: true

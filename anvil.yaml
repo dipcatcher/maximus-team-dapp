@@ -1,0 +1,113 @@
+scheduled_tasks:
+- task_name: record_results
+  time_spec:
+    n: 1
+    every: hour
+    at: {minute: 0}
+  job_id: ORDNNATT
+- task_name: record_results
+  time_spec:
+    n: 4
+    every: minute
+    at: {}
+  job_id: MRXECPPE
+dependencies:
+- app_id: 2XKDZASWBEKTDLDF
+  version: {dev: true}
+- app_id: FPRANSZJWMPODAZ4
+  version: {dev: false}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/secrets.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Main}
+package_name: Maximus_Dapp
+allow_embedding: false
+name: Clone of Maximus TEAM Test V2
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {logo_img: 'asset:mmm 1.png', title: Maximus TEAM Test V2, description: Maximus TEAM is the official team member token of Maximus DAO. Stake TEAM to claim your share of income earned by the Maximus TEAM Contract from deploying and promoting the Maximus Perpetual Stake Pools.}
+startup_form: calculator_page
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="text/javascript">
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    '}
+db_schema:
+  pricing:
+    title: Pricing
+    client: search
+    server: full
+    columns:
+    - name: level
+      admin_ui: {width: 200}
+      type: string
+    - name: half-sesh
+      admin_ui: {width: 200}
+      type: string
+    - name: full-sesh
+      admin_ui: {width: 200}
+      type: string
+  contact:
+    title: Contact
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: topic
+      admin_ui: {width: 200}
+      type: string
+    - name: question
+      admin_ui: {width: 200}
+      type: string
+    - name: time
+      admin_ui: {width: 200}
+      type: datetime
+  dashboard:
+    title: dashboard
+    client: search
+    server: full
+    columns:
+    - name: results
+      admin_ui: {width: 552.000472}
+      type: simpleObject
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+  search_log:
+    title: search_log
+    client: none
+    server: full
+    columns:
+    - name: searched_at
+      admin_ui: {width: 200}
+      type: datetime
+    - name: addresses
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: results
+      admin_ui: {width: 200}
+      type: simpleObject
+secrets:
+  WEB3_INFURA_PROJECT_ID:
+    value: {? '' : f1GOG8x91cx6sr/KqAZ0Vv630eoxtWjpuzRoqgu67+Y5PB3udkmN3bh5BY07keTLwzOpea03eP4o7oFqpoBlBpbpx44BrmX9EPAg8jm6DZQw1o0Yd2xb7nXz+INaRyCrCwR+BxINjBSfiaWZY7xLtV54S/lK+10=}
+    type: secret
+  WEB3_INFURA_API_SECRET:
+    value: {? '' : ARPyAM7QXk/VURisttBZWSwkn05inWsbU4JOeDebCKsOdoM4AZEe0nzaBoYNT97NEjJ5stym4Su0GlMxXJZBuPlP8wSUeYQMTx5+K4gUPgjeX1KQMHWwbP63LyryGlmnR7ggZJFnicSgg4IDZ1RqgxSgtM7EsDQ=}
+    type: secret
+renamed: true

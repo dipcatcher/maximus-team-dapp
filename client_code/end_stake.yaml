@@ -1,0 +1,202 @@
+components:
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: '#06132D'}
+  name: flow_panel_3
+  layout_properties:
+    col_widths: {}
+    grid_position: VNVZBB,NFRSJW
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: '#0E1E45'}
+    name: card_1
+    layout_properties: {grid_position: 'LWFEQZ,XWMMTE', width: 359.01599999999996,
+      expand: false}
+    components:
+    - type: ColumnPanel
+      properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: ''}
+      name: column_panel_3
+      layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
+      components:
+      - type: Label
+        properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+          visible: true, text: End Stake TEAM, font_size: 24, font: '', spacing_above: small,
+          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+          underline: false, icon: ''}
+        name: label_2_copy_4
+        layout_properties:
+          col_widths: {}
+          grid_position: RGQQUT,BQBSYS
+      - type: Label
+        properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+          visible: true, text: End Stake, font_size: 16, font: '', spacing_above: small,
+          icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+          underline: false, icon: ''}
+        name: label_4
+        layout_properties: {grid_position: 'RENGWR,KPYTPK'}
+      - type: Link
+        properties: {role: null, url: 'https://app.uniswap.org/#/swap?inputCurrency=0x2b591e99afe9f32eaa6214f7b7629768c40eeb39&outputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&chain=mainnet',
+          align: center, tooltip: '', border: '', foreground: cyan, visible: true,
+          text: More Info, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+          spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
+        name: link_need_hex
+        layout_properties: {grid_position: 'RENGWR,PFKXXC'}
+        event_bindings: {}
+        components: []
+      - type: XYPanel
+        properties: {height: 54}
+        name: xy_panel_1
+        layout_properties: {grid_position: 'SUQMRD,RKKMUT'}
+        components:
+        - type: TextBox
+          properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+            border: '', enabled: true, foreground: white, visible: true, text: '',
+            font_size: 16, font: '', spacing_above: small, type: number, spacing_below: small,
+            italic: false, background: '#06132D', bold: false, underline: false}
+          name: text_box_1
+          layout_properties:
+            col_widths: {}
+            grid_position: GCWCKS,CODDJL
+            row: BFZIWT
+            width_xs: 12
+            col_xs: 0
+            x: 0
+            y: 7.96875
+            width: 329.01723725097656
+          event_bindings: {change: text_box_1_change, pressed_enter: text_box_1_pressed_enter}
+        - type: Link
+          properties: {role: null, url: '', align: left, tooltip: '', border: '',
+            foreground: '#8E97CD', visible: true, text: ❇️ max, font_size: 16, wrap_on: mobile,
+            font: '', col_spacing: medium, spacing_above: small, icon_align: left,
+            col_widths: '{}', spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: link_max_maxi
+          layout_properties: {grid_position: 'VBTACA,KTZXFE', row: HRKDVQ, width_xs: 4,
+            col_xs: 2, x: 268.9930725097656, y: 7.96875, width: 60}
+          components: []
+          event_bindings: {click: link_maxi_balance_click}
+      - type: FlowPanel
+        properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+          foreground: '', visible: true, spacing_above: small, spacing_below: small,
+          background: ''}
+        name: flow_panel_1_copy_3
+        layout_properties:
+          col_widths: {}
+          grid_position: RHJMXL,RDQHOD
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: 'Total Staked TEAM:', font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_3_copy_3
+          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
+            width_xs: 2, col_xs: 0}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_team_staked
+          layout_properties: {}
+      - type: FlowPanel
+        properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+          foreground: '', visible: true, spacing_above: small, spacing_below: small,
+          background: ''}
+        name: flow_panel_1_copy_4
+        layout_properties:
+          col_widths: {}
+          grid_position: GCXNSN,PWGGIU
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: Actively Staked TEAM, font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_3_copy_5
+          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
+            width_xs: 2, col_xs: 0}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_team_active_staked
+          layout_properties: {}
+      - type: FlowPanel
+        properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+          foreground: '', visible: true, spacing_above: small, spacing_below: small,
+          background: ''}
+        name: flow_panel_penalty
+        layout_properties:
+          col_widths: {}
+          grid_position: DBXSRU,VQQWEU
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: 'Early End Stake Penalty:', font_size: 16, font: '',
+            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+            background: '', bold: false, underline: false, icon: ''}
+          name: label_3_copy_4
+          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
+            width_xs: 2, col_xs: 0}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_penalty
+          layout_properties: {}
+      - type: FlowPanel
+        properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+          foreground: '', visible: true, spacing_above: small, spacing_below: small,
+          background: ''}
+        name: flow_panel_1_copy_2
+        layout_properties:
+          col_widths: {}
+          grid_position: HSIPIP,BGCEWX
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: Liquid TEAM, font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_3_copy_2
+          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
+            width_xs: 2, col_xs: 0}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_team_balance
+          layout_properties: {}
+      - type: Button
+        properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
+          foreground: white, visible: true, text: End Stake TEAM, font_size: 16, font: '',
+          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+          background: '#246BFD', bold: true, underline: false, icon: ''}
+        name: button_2
+        layout_properties:
+          col_widths: {}
+          grid_position: ZZYQAQ,XNGQDV
+          row: WSYKAQ
+          width_xs: 12
+          col_xs: 0
+          width: 329.01
+        event_bindings: {click: button_2_click}
+    - type: Link
+      properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: cyan,
+        visible: true, text: unstake, font_size: null, wrap_on: mobile, font: '',
+        col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
+      name: link_1
+      layout_properties: {grid_position: 'KTHBRV,YDVPWK'}
+      event_bindings: {click: link_1_click}
+container: {type: ColumnPanel}

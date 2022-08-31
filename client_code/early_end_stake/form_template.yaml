@@ -1,0 +1,59 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"CVNBZN":45}'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'IPDQNQ,QQCUTS'}
+  components: []
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 16,
+    font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: text_box_1_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: SXRCFA,CVNBZN
+    row: BFZIWT
+    width_xs: 12
+    col_xs: 0
+    x: 0
+    y: 7.96875
+    width: 329.01723725097656
+  event_bindings: {change: text_box_1_change, pressed_enter: text_box_1_pressed_enter}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Amount Currently Staked, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'KFQSZN,UHCHRZ'}
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_1
+  layout_properties: {grid_position: 'NTTGSM,GZHGRP'}
+  components:
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_amount_staked
+    layout_properties: {grid_position: 'JKWZKX,CQDCZZ'}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '#8E97CD',
+      visible: true, text: enter max, font_size: 16, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: link_max_team
+    layout_properties: {grid_position: 'JKWZKX,SVKKME', row: HRKDVQ, width_xs: 4,
+      col_xs: 2, x: 242.515625, y: 7.96875, width: 92.5}
+    components: []
+    event_bindings: {click: link_max_team_click}
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {grid_position: 'RZRWHX,WNKUBN'}
+is_package: true
