@@ -63,42 +63,5 @@
 
   
 
-async function addMAXI() {
 
-try {
-  
-  const wasAdded = await ethereum.request({
-    method: 'wallet_watchAsset',
-    params: {
-      type: 'ERC20', 
-      options: {
-        address: contractAddressMAXI, 
-        symbol: tokenSymbol, 
-        decimals: tokenDecimals, 
-        image: tokenImage, 
-      },
-    },
-  });
-
-  if (wasAdded) {
-    console.log('Thanks for your interest!');
-  } else {
-    console.log('HelloWorld Coin has not been added');
-  }
-} catch (error) {
-  console.log(error);
-}
-}
-  window.ethereum.on('accountsChanged', async () => {
-   
-    anvil.call(this, "refresh_account")
-});
-  async function ra(){
-    anvil.call($("#marker"), "refresh_account").then(function (r) {
-    alert(r);})
-  }
-  
-  
-  
-                     
 </script>

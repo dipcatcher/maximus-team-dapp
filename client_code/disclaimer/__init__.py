@@ -39,7 +39,7 @@ class disclaimer(disclaimerTemplate):
       Notification('To use the dapp you must be on an etherem enabled browser, such as MetaMask.').show()
       try:
         
-        open_form('Main_copy')
+        open_form('Main_copy_copy')
       except:
         pass
         

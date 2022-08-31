@@ -184,7 +184,7 @@ class mint_page(mint_pageTemplate):
       try:
         tokenSymbol = 'TEAM'
         tokenDecimals = 8
-        tokenImage = 'https://perpetuals.anvil.app/_/api/token/logo/TEAM';
+        tokenImage = 'https://perpetuals.anvil.app/_/api/token/logo/TEAM'
 
         from anvil.js.window import ethereum
         a = ethereum.request({

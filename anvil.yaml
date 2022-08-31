@@ -26,7 +26,7 @@ services:
 - source: /runtime/services/anvil/secrets.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Main_copy}
+startup: {type: form, module: Main_copy_copy}
 package_name: Maximus_Dapp
 allow_embedding: false
 name: Maximus TEAM Test V3
