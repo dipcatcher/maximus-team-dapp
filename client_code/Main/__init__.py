@@ -94,7 +94,7 @@ class Main(MainTemplate):
     """This method is called when the button is clicked"""
    
     a=False
-    chain_id='0x3AD'#'0x1' 
+    chain_id='0x1'#'0x1' 
     
     self.is_connected = self.web3_wallet.connect_network(chain_id)
 

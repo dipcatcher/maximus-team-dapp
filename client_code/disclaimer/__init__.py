@@ -28,7 +28,7 @@ class disclaimer(disclaimerTemplate):
       try:
         a = ethereum.request({
                   'method': 'wallet_switchEthereumChain',
-                  'params': [{ "chainId": '0x3AD' }] #'0x1
+                  'params': [{ "chainId": '0x1' }] #'0x1
               })
         anvil.js.await_promise(a)
       except:

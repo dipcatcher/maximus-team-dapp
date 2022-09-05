@@ -29,9 +29,9 @@ services:
 startup: {type: form, module: Main_copy_copy}
 package_name: Maximus_Dapp
 allow_embedding: false
-name: Maximus TEAM Test V3
+name: Maximus TEAM
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {logo_img: 'asset:IMG_1128.PNG', title: Maximus TEAM Test V3, description: Maximus TEAM is the official team member token of Maximus DAO. Stake TEAM to claim your share of income earned by the Maximus TEAM Contract from deploying and promoting the Maximus Perpetual Stake Pools.}
+metadata: {logo_img: 'asset:IMG_1128.PNG', title: Maximus TEAM, description: Maximus TEAM is the official team member token of Maximus DAO. Stake TEAM to claim your share of income earned by the Maximus TEAM Contract from deploying and promoting the Maximus Perpetual Stake Pools.}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
