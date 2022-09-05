@@ -97,14 +97,6 @@ components:
     layout_properties: {grid_position: 'EWUMFW,IEBXCV', width: 359.01599999999996,
       expand: false}
     components:
-    - type: Button
-      properties: {role: secondary-color, align: center, tooltip: '', border: '',
-        enabled: true, foreground: '', visible: false, text: Finalize Minting, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: primary_color_1
-      layout_properties: {grid_position: 'YOBKHT,EXXYSD'}
-      event_bindings: {click: primary_color_1_click}
     - type: ColumnPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
         wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
@@ -112,14 +104,6 @@ components:
       name: column_panel_3
       layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
       components:
-      - type: Button
-        properties: {role: secondary-color, align: center, tooltip: '', border: '',
-          enabled: true, foreground: '', visible: true, text: Get Testnet MAXI, font_size: null,
-          font: '', spacing_above: medium, icon_align: left, spacing_below: medium,
-          italic: false, background: '#F5903B', bold: false, underline: false, icon: ''}
-        name: button_1
-        layout_properties: {grid_position: 'GHDAYW,JERNYZ'}
-        event_bindings: {click: button_1_click}
       - type: Label
         properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
           visible: true, text: 'Mint 1 TEAM

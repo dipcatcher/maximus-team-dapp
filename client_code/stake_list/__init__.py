@@ -59,6 +59,7 @@ class stake_list(stake_listTemplate):
       
       stake_record = self.get_stake_record_data(self.address, n)
       if stake_record['initiated']:
+        self.label_day.text='Your Stakes'
         self.stake_records.append(stake_record)
         self.column_panel_1.add_component(stake_record_card(stake_record=stake_record, team_contract=self.team_contract, write_team_contract=self.write_team_contract, address=self.address, read_reward_contract=self.reward_contract, write_reward_contract=self.write_reward_contract, main=self.main, stake_page=self.stake_page))
   

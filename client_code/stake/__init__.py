@@ -128,11 +128,7 @@ class stake(stakeTemplate):
       except Exception as e:
         print(e)
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.write_team_contract.prepareClaims()
-
-
+  
 
 
 

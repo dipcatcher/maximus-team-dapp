@@ -210,21 +210,8 @@ class mint_page(mint_pageTemplate):
     """This method is called when the link is clicked"""
     alert('To protect your security, in order for the Maximus contract to Mint MAXI with your HEX you must approve an exact amount of HEX that the Maximus contract is allowed to use on your behalf.')
 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    existing_maxi = self.maxi_balance
-    try:
-      anvil.js.await_promise(self.write_maxi_contract.faucet(100000000000000))
-      while existing_maxi==int(self.maxi_contract.balanceOf(self.address).toString()):
-        time.sleep(1)
-    
-      self.refresh_mint()
-    except Exception as e:
-      Notification('Faucet Request not completed', style='warning').show()
-
-  def primary_color_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    self.write_team_contract.finalizeMinting()
+  
+  
 
 
 
