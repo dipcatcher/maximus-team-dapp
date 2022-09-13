@@ -7,7 +7,7 @@ from anvil.tables import app_tables
 from ..Home import Home
 from ..stake import stake
 from ..stake_list import stake_list
-import Maximus_API
+from Maximus_dash.table_dash_copy import table_dash_copy
 import datetime
 import webbrowser
 import time
@@ -168,7 +168,7 @@ class Main(MainTemplate):
   def link_minting_dashboard_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Maximus_API.table_dash_copy.table_dash_copy())
+    self.content_panel.add_component(table_dash_copy())
 
 
 

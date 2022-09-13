@@ -105,6 +105,47 @@ db_schema:
     - name: results
       admin_ui: {width: 200}
       type: simpleObject
+  dashboard_reference:
+    title: dashboard_reference
+    client: none
+    server: full
+    columns:
+    - name: latest
+      admin_ui: {width: 200}
+      type: link_single
+      target: team_dashboard
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+  team_dashboard:
+    title: team_dashboard
+    client: none
+    server: full
+    columns:
+    - name: timestamp
+      admin_ui: {width: 200}
+      type: datetime
+    - name: TEAM Liquid
+      admin_ui: {width: 200}
+      type: number
+    - name: TEAM Staked
+      admin_ui: {width: 200}
+      type: number
+    - name: MAXI Minted into TEAM
+      admin_ui: {width: 200}
+      type: number
+    - name: BASE Minted
+      admin_ui: {width: 200}
+      type: number
+    - name: TRIO Minted
+      admin_ui: {width: 200}
+      type: number
+    - name: LUCKY Minted
+      admin_ui: {width: 200}
+      type: number
+    - name: DECI Minted
+      admin_ui: {width: 200}
+      type: number
 secrets:
   WEB3_INFURA_PROJECT_ID:
     value: {? '' : f1GOG8x91cx6sr/KqAZ0Vv630eoxtWjpuzRoqgu67+Y5PB3udkmN3bh5BY07keTLwzOpea03eP4o7oFqpoBlBpbpx44BrmX9EPAg8jm6DZQw1o0Yd2xb7nXz+INaRyCrCwR+BxINjBSfiaWZY7xLtV54S/lK+10=}
