@@ -9,6 +9,7 @@ from ..stake import stake
 from ..stake_list import stake_list
 import Maximus_dash
 from Maximus_dash.table_dash_copy import table_dash_copy
+
 import datetime
 import webbrowser
 import time
