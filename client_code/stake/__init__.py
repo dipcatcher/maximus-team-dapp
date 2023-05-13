@@ -16,9 +16,7 @@ class stake(stakeTemplate):
     self.init_components(**properties)
     self.main=properties['main']
     self.address = self.main.address
-    w = 'The Staking deadline for the first staking year has ended. If you stake now you are locking in for the second year, starting October 12, 2023 and ending one year after that. You will not earn rewards from the first staking period.'
-    l=Label(text=w, foreground='red')
-    alert(l, buttons=[('I Understand', True)],title='WARNING', dismissible=False)
+    
     try:
       if self.main.provider is not None:
         self.maxi_contract, self.hex_contract, self.team_contract, self.reward_contract=self.main.web3_wallet.connect_contracts(self.main.provider)
@@ -47,8 +45,8 @@ class stake(stakeTemplate):
     days_remaining = (last_day-current_day)+1
     deadline = datetime.datetime.utcnow().date()+ datetime.timedelta(days=days_remaining)
     self.label_stake_deadline.text = 'Stake before October 12, 2023 to earn rewards from Staking Year {}'.format( y)
-   
-    
+    print(dir(self.main.provider))
+    print(self.main.provider.getNetwork())
     year_text=  "Year {}".format(y)
     self.label_next_year.text = year_text
     #self.label_stake_deadline.text ="calculate days remaining" # base_contract.STAKE_START_DAY - base_contract.getHexDay()

@@ -45,6 +45,7 @@ class Main(MainTemplate):
     self.init_components(**properties)
     
     self.address=None
+    self.chain_id = properties['chain_id']
     
    
     
@@ -84,7 +85,7 @@ class Main(MainTemplate):
         print(e)
   
       
-      self.menu_click(sender=self.link_mint)
+      self.menu_click(sender=self.link_stake)
       
         
         
@@ -93,10 +94,9 @@ class Main(MainTemplate):
   def button_connect_dapp_click(self, **event_args):
     """This method is called when the button is clicked"""
    
-    a=False
-    chain_id='0x1'#'0x1' 
+   
     
-    self.is_connected = self.web3_wallet.connect_network(chain_id)
+    self.is_connected = self.web3_wallet.connect_network(self.chain_id)
 
     
 
