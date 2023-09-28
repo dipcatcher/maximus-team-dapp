@@ -25,12 +25,15 @@ class disclaimer(disclaimerTemplate):
     """This method is called when the button is clicked"""
     self.raise_event('x-close-alert', value=True)
     if is_ethereum:
-      c = confirm("Choose Network", buttons=[("Ethereum", True), ("Pulsechain", False)])
-      if c:
-        chain_id = "0x1"
-      else:
+      #c = confirm("Choose Network", buttons=[("Ethereum", True), ("Pulsechain", False)])
+      aa = alert("Choose Network", buttons=[("Ethereum", True), ("PulseChain", False), ("Testnet", None)])
+      if aa==True:
+        chain_id = '0x1'
+      elif aa == False:
         chain_id = "0x171"
-      print(chain_id)
+      elif aa ==None:
+        chain_id =  "0x7A69"
+        print(chain_id)
       try:
         a = ethereum.request({
                   'method': 'wallet_switchEthereumChain',
