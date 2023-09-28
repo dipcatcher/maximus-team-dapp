@@ -11,7 +11,7 @@ class RowTemplate4(RowTemplate4Template):
     self.init_components(**properties)
     print(self.parent)
     self.link_1.text = self.item['period']
-    
+    self.label_total.text = "{:,}".format(int(self.item['total']))
 
     # Any code you write here will run when the form opens.
     self.repeating_panel_1.set_event_handler('x-click-claim', self.claim_click)

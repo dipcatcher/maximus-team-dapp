@@ -2,7 +2,7 @@ container: {type: DataRowPanel}
 components:
 - type: DataGrid
   properties:
-    role: null
+    role: card-blue
     columns:
     - {id: NBTZNA, title: Token, data_key: token, $$hashKey: 'object:159410'}
     - {id: UBPTUE, title: Amount, data_key: claimable, $$hashKey: 'object:159411'}
@@ -17,7 +17,7 @@ components:
     show_page_controls: false
     spacing_above: small
     spacing_below: small
-    background: theme:Gray 800
+    background: ''
   name: data_grid_1
   layout_properties: {column: null}
   components:
@@ -33,4 +33,8 @@ components:
   name: link_1
   layout_properties: {column: EMOVWX}
   event_bindings: {click: link_1_click}
+- type: Label
+  properties: {}
+  name: label_total
+  layout_properties: {column: IBSJQE}
 is_package: true

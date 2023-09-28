@@ -12,7 +12,7 @@ import datetime
 import webbrowser
 import time
 from ..earning_calculator import earning_calculator
-
+from ..management import management
 try:
   from ..mint_page import mint_page
   from ..dashboard_page import dashboard_page
@@ -151,7 +151,9 @@ class Main(MainTemplate):
     if b == 'Earnings Calculator':
       self.content_panel.clear()
       self.content_panel.add_component(earning_calculator())
-  
+    if b == "Contract Operations":
+      self.content_panel.clear()
+      self.content_panel.add_component(management())
       
 
   def link_connect_to_chain_click(self, **event_args):

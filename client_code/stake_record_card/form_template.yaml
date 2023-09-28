@@ -95,7 +95,7 @@ components:
           columns:
           - {id: EMOVWX, title: Year, data_key: period, $$hashKey: 'object:43938',
             width: 60, expand: false}
-          - {id: CFUPTK, title: Amount Served, data_key: amount, $$hashKey: 'object:43939',
+          - {id: CFUPTK, title: Your Staked TEAM, data_key: amount, $$hashKey: 'object:43939',
             width: '', expand: false}
           - {id: IBSJQE, title: Total Staked, data_key: total, $$hashKey: 'object:43940',
             width: '', expand: false}

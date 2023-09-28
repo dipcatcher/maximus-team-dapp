@@ -47,7 +47,7 @@ class stake_record_card(stake_record_cardTemplate):
       if v>0:
         total = int(self.team_contract.globalStakedTeamPerPeriod(k).toString())
         claimable_amounts = []
-        for token in ['HEX','HDRN', 'MAXI', 'BASE', 'TRIO', 'LUCKY', 'DECI']:
+        for token in ['HEX','HDRN', 'MAXI', 'BASE', 'TRIO', 'LUCKY', 'DECI', "TEAM"]:
           claimable = int(self.team_contract.getClaimableAmount(self.address, k, token, self.d_stake_record['stakeID'])[0].toString())
           d = 9 if token =='HDRN' else 8
           if claimable>0:

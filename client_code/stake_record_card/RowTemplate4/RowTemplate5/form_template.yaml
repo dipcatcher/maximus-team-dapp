@@ -8,4 +8,8 @@ components:
   name: link_claim
   layout_properties: {column: UDIEGZ}
   event_bindings: {click: link_claim_click}
+- type: Label
+  properties: {}
+  name: label_claimable
+  layout_properties: {column: UBPTUE}
 is_package: true

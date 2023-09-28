@@ -10,7 +10,7 @@ class RowTemplate5(RowTemplate5Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.link_claim.text = '✅' if self.item['claimed'] else 'claim'
-    
+    self.label_claimable.text = "{:,.8f}".format(self.item['claimable'])
     if all([not self.item['claimed'], self.item['claimable']>0]):
       self.link_claim.visible=True
     
