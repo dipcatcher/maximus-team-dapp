@@ -125,10 +125,16 @@ class stake_record_card(stake_record_cardTemplate):
     """This method is called when the link is clicked"""
     self.flow_panel_manage.visible=not self.flow_panel_manage.visible
   
-  def claim_function(self, period, ticker, stake_id, **event_args):
-    anvil.js.await_promise(self.write_reward_contract.claimRewards(period, ticker, stake_id))
-    while not self.read_reward_contract.didUserStakeClaimFromPeriod(self.address,stake_id, period,ticker ):
-      time.sleep(1)
-    self.refresh_card()
+  def claim_function(self, period, ticker, stake_id, button, **event_args):
+    try:
+      a = anvil.js.await_promise(self.write_reward_contract.claimRewards(period, ticker, stake_id))
+      a.wait()
+      button.text = '✅'
+    except Exception as e:
+      try:
+        alert(e.original_error.reason)
+      except:
+        alert(e.original_error.message)
+    #self.refresh_card()
     # check if the did claim value is set to true, then we need to refresh the view
     

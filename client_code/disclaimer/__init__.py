@@ -26,7 +26,7 @@ class disclaimer(disclaimerTemplate):
     self.raise_event('x-close-alert', value=True)
     if is_ethereum:
       #c = confirm("Choose Network", buttons=[("Ethereum", True), ("Pulsechain", False)])
-      b=[("Ethereum", True), ("PulseChain", False)]#, ("Testnet", None)]
+      b=[("Ethereum", True), ("PulseChain", False), ("Testnet", None)]
       aa = alert("Choose Network", buttons=b)
       if aa==True:
         chain_id = '0x1'

@@ -10,6 +10,18 @@ class RowTemplate9(RowTemplate9Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.write_maxi_contract, self.write_hex_contract, self.write_team_contract, self.write_reward_contract= get_open_form().web3_wallet.connect_contracts(get_open_form().signer)
+    is_stake = False
+    if self.write_team_contract.isStakingPeriod() is True:
+      self.button_stage.enabled=False
+      self.button_stage.text = 'Rewards Pending'
+      is_stake = True
+    
+    if self.item['Balance']==0:
+      self.button_stage.enabled=0
+      self.button_stage.text = "No {} Rewards".format(self.item['Token'])
+      if is_stake:
+        self.button_stage.text = "Already Staged"
+      
     # Any code you write here will run before the form opens.
 
   def button_stage_click(self, **event_args):
@@ -23,7 +35,7 @@ class RowTemplate9(RowTemplate9Template):
       event_args['sender'].text = "Succesfully Staged"
       event_args['sender'].icon = 'fa:check'
     except Exception as e:
-      raise e
+      
       try:
         alert(e.original_error.reason)
       except:

@@ -23,6 +23,6 @@ class RowTemplate4(RowTemplate4Template):
     else:
       Notification('Check back for rewards once Year {} ends.'.format(self.item['period'])).show()
   
-  def claim_click(self,period, ticker, stake_id, **event_args):
-    self.parent.raise_event('x-claim-function', period=period, ticker=ticker, stake_id=stake_id)
+  def claim_click(self,period, ticker, stake_id, button, **event_args):
+    self.parent.raise_event('x-claim-function', period=period, ticker=ticker, stake_id=stake_id, button=button, **event_args)
     
