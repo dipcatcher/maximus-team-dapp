@@ -26,7 +26,13 @@ class stake_data(stake_dataTemplate):
           token = "HEX"
         else:
           token = "TEAM"
-        rt =RichText(content="<b>{}: </b>{:,} {}".format(k,int(v), token), format='restricted_html')
+        if token == "HEX":
+          rt =RichText(content="<b>{}: </b>{:.8f} {}".format(k,v, token), format='restricted_html')
+        else:
+          if "TEAM per TEAM" in k:
+            rt =RichText(content="<b>{}: </b>{:.8f} {}".format(k,v, token), format='restricted_html')
+          else:
+            rt =RichText(content="<b>{}: </b>{:,} {}".format(k,int(v), token), format='restricted_html')
         self.add_component(rt)
   def get_early_end_stake_data(self):
     self.providers = {}
@@ -83,11 +89,13 @@ class stake_data(stake_dataTemplate):
     tshares = shares/(10**12)
     principal_hearts = 10003310085736251
     principal = principal_hearts/(10**8)
-    bpb_tshares = principal*.1 *(principal/(150000000))
+    bpb = principal*.1 *(principal/(150000000))
+    lpb = principal *2 *(369/3650)
+    t = principal + bpb + lpb
     ebase_earnings = 12256702
     pbase_earnings=12104662
-    data['Ethereum']['TEAM HEX Earnings']= ebase_earnings*(bpb_tshares/tshares)
-    data['PulseChain']['TEAM HEX Earnings']= pbase_earnings*(bpb_tshares/tshares)
+    data['Ethereum']['TEAM HEX Earnings']= ebase_earnings*(bpb/(2*t))
+    data['PulseChain']['TEAM HEX Earnings']= pbase_earnings*(bpb/(2*t))
     data['Ethereum']['HEX per TEAM Staked']= data['Ethereum']['TEAM HEX Earnings']/data['Ethereum']['Period 1 TEAM Staked']
     data['PulseChain']['HEX per TEAM Staked']= data['PulseChain']['TEAM HEX Earnings']/data['PulseChain']['Period 1 TEAM Staked']
     hdrn_base = 1925051462 + 9174800932
@@ -95,6 +103,11 @@ class stake_data(stake_dataTemplate):
     data['PulseChain']['TEAM HDRN Earnings']= hdrn_base
     data['Ethereum']['HDRN per TEAM Staked']= data['Ethereum']['TEAM HDRN Earnings']/data['Ethereum']['Period 1 TEAM Staked']
     data['PulseChain']['HDRN per TEAM Staked']= data['PulseChain']['TEAM HDRN Earnings']/data['PulseChain']['Period 1 TEAM Staked']
+    team_base = 2555734
+    data['Ethereum']['TEAM TEAM Earnings']= team_base
+    data['PulseChain']['TEAM TEAM Earnings']= team_base
+    data['Ethereum']['TEAM per TEAM Staked']= data['Ethereum']['TEAM TEAM Earnings']/data['Ethereum']['Period 1 TEAM Staked']
+    data['PulseChain']['TEAM per TEAM Staked']= data['PulseChain']['TEAM TEAM Earnings']/data['PulseChain']['Period 1 TEAM Staked']
     
     
     return data
