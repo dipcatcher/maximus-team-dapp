@@ -38,7 +38,7 @@ class stake_data(stake_dataTemplate):
     
     #TODO: get a list of all the EarlyEndStake events event: EarlyEndStake(address indexed staker,uint256 amount,uint256 staking_period,uint256 stakeID).
     early_end_stake_topic = ethers.utils.id("EarlyEndStake(address,uint256,uint256,uint256)")
-
+    
     # Define the filter
     filter_eth = {
       'fromBlock': 'earliest',
