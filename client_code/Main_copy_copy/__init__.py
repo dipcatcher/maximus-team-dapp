@@ -44,7 +44,6 @@ class Main_copy_copy(Main_copy_copyTemplate):
 
 
 
-
     
   def menu_click(self, **event_args):
     """This method is called when the link is clicked"""
