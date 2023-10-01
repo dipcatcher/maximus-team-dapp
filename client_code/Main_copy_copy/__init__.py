@@ -25,6 +25,7 @@ try:
   from ..disclaimer_copy import disclaimer_copy
   from ..chain_interface import chain_interface
   from ..Main_copy import Main_copy
+  from ..stake_data import stake_data
 except:
 
   pass
@@ -38,7 +39,7 @@ class Main_copy_copy(Main_copy_copyTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    alert(stake_data())
     self.address=None
 
 
