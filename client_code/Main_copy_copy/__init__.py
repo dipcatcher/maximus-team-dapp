@@ -39,7 +39,7 @@ class Main_copy_copy(Main_copy_copyTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    alert(stake_data())
+    
     self.address=None
 
 
