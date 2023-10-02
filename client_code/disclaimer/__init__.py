@@ -26,7 +26,7 @@ class disclaimer(disclaimerTemplate):
     self.raise_event('x-close-alert', value=True)
     if is_ethereum:
       #c = confirm("Choose Network", buttons=[("Ethereum", True), ("Pulsechain", False)])
-      b=[("Ethereum", True), ("PulseChain", False)]#, ("Testnet", None)]
+      b=[("Ethereum", True), ("PulseChain", False), ("ETHPOW", "ETHPOW")]#, ("Testnet", None)]
       aa = alert("Choose Network", buttons=b)
       if aa==True:
         chain_id = '0x1'
@@ -34,7 +34,8 @@ class disclaimer(disclaimerTemplate):
         chain_id = "0x171"
       elif aa ==None:
         chain_id =  "0x7A69"
-        print(chain_id)
+      elif aa =="ETHPOW":
+        chain_id="0x2711"
       try:
         a = ethereum.request({
                   'method': 'wallet_switchEthereumChain',
