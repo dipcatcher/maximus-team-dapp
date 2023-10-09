@@ -34,9 +34,12 @@ class stake(stakeTemplate):
     self.team_supply = self.team_contract.totalSupply().toString()
     self.label_total_liquid.text = '{:,.8f} ❇️'.format(int(self.team_balance)/100000000)
     self.team_staked_total = self.team_contract.GLOBAL_AMOUNT_STAKED().toString()
-    self.label_total_staked.text = '{:,.8f} ❇️'.format(int(self.team_staked_total)/100000000)
+    
     self.current_period = int(self.team_contract.getCurrentPeriod().toNumber())
-   
+    next_staking_period = self.current_period+2 if self.current_period% 2 ==1 else self.current_period+1
+    #self.upcoming=int(self.team_contract.globalStakedTeamPerPeriod(next_staking_period).toString())/(10**8)
+    self.label_total_staked.text = '{:,.8f} ❇️'.format(int(self.team_staked_total)/100000000)
+    
     
     y=(int(1+(self.current_period+1)/2))
     last_day = self.base_contract.RELOAD_PHASE_END().toNumber()
