@@ -47,7 +47,7 @@ class stake(stakeTemplate):
     
     days_remaining = (last_day-current_day)+1
     deadline = datetime.datetime.utcnow().date()+ datetime.timedelta(days=days_remaining)
-    self.label_stake_deadline.text = 'Stake before October 12, 2023 to earn rewards from Staking Year {}'.format( y)
+    self.label_stake_deadline.text = 'Stake before October 10, 2023 to earn rewards from Staking Year 2'.format( y)
     print(dir(self.main.provider))
     print(self.main.provider.getNetwork())
     year_text=  "Year {}".format(y)
