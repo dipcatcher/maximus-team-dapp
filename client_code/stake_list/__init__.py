@@ -36,6 +36,7 @@ class stake_list(stake_listTemplate):
         bool initiated;
     }'''
     stake_record = self.team_contract.stakes(user, stakeID)
+    
     d_stake_record = {}
     d_stake_record['address']=stake_record[0]
     d_stake_record['balance']=int(stake_record[1].toString())
