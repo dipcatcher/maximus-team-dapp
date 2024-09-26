@@ -1,16 +1,105 @@
-scheduled_tasks:
-- task_name: record_results
-  time_spec:
-    n: 1
-    every: hour
-    at: {minute: 0}
-  job_id: ORDNNATT
-- task_name: record_results
-  time_spec:
-    n: 4
-    every: minute
-    at: {}
-  job_id: MRXECPPE
+allow_embedding: false
+db_schema:
+  contact:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 200}
+      name: topic
+      type: string
+    - admin_ui: {width: 200}
+      name: question
+      type: string
+    - admin_ui: {width: 200}
+      name: time
+      type: datetime
+    server: full
+    title: Contact
+  dashboard:
+    client: search
+    columns:
+    - admin_ui: {width: 552.000472}
+      name: results
+      type: simpleObject
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    server: full
+    title: dashboard
+  dashboard_reference:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: latest
+      target: team_dashboard
+      type: link_single
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    server: full
+    title: dashboard_reference
+  pricing:
+    client: search
+    columns:
+    - admin_ui: {width: 200}
+      name: level
+      type: string
+    - admin_ui: {width: 200}
+      name: half-sesh
+      type: string
+    - admin_ui: {width: 200}
+      name: full-sesh
+      type: string
+    server: full
+    title: Pricing
+  search_log:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: searched_at
+      type: datetime
+    - admin_ui: {width: 200}
+      name: addresses
+      type: simpleObject
+    - admin_ui: {width: 200}
+      name: results
+      type: simpleObject
+    server: full
+    title: search_log
+  team_dashboard:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: timestamp
+      type: datetime
+    - admin_ui: {width: 200}
+      name: TEAM Liquid
+      type: number
+    - admin_ui: {width: 200}
+      name: TEAM Staked
+      type: number
+    - admin_ui: {width: 200}
+      name: MAXI Minted into TEAM
+      type: number
+    - admin_ui: {width: 200}
+      name: BASE Minted
+      type: number
+    - admin_ui: {width: 200}
+      name: TRIO Minted
+      type: number
+    - admin_ui: {width: 200}
+      name: LUCKY Minted
+      type: number
+    - admin_ui: {width: 200}
+      name: DECI Minted
+      type: number
+    server: full
+    title: team_dashboard
 dependencies:
 - app_id: 2XKDZASWBEKTDLDF
   version: {dev: true}
@@ -18,139 +107,46 @@ dependencies:
   version: {dev: false}
 - app_id: Y32WORJLG6YJQ7HN
   version: {dev: false}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
-- source: /runtime/services/anvil/email.yml
-  client_config: {}
-  server_config: {}
-- source: /runtime/services/anvil/secrets.yml
-  client_config: {}
-  server_config: {}
-startup: {type: form, module: Main_copy_copy}
-package_name: Maximus_Dapp
-allow_embedding: false
+metadata: {description: Maximus TEAM is the official team member token of Maximus DAO. Stake TEAM to claim your share of income earned by the Maximus TEAM Contract from deploying and promoting the Maximus Perpetual Stake Pools., logo_img: 'asset:IMG_1128.PNG', title: Maximus TEAM}
 name: Maximus TEAM
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {logo_img: 'asset:IMG_1128.PNG', title: Maximus TEAM, description: Maximus TEAM is the official team member token of Maximus DAO. Stake TEAM to claim your share of income earned by the Maximus TEAM Contract from deploying and promoting the Maximus Perpetual Stake Pools.}
-startup_form: null
-native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
-    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
-
-    <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="text/javascript">
-
-    </script>
+native_deps:
+  head_html: |
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
-    '}
-db_schema:
-  pricing:
-    title: Pricing
-    client: search
-    server: full
-    columns:
-    - name: level
-      admin_ui: {width: 200}
-      type: string
-    - name: half-sesh
-      admin_ui: {width: 200}
-      type: string
-    - name: full-sesh
-      admin_ui: {width: 200}
-      type: string
-  contact:
-    title: Contact
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-    - name: email
-      admin_ui: {width: 200}
-      type: string
-    - name: topic
-      admin_ui: {width: 200}
-      type: string
-    - name: question
-      admin_ui: {width: 200}
-      type: string
-    - name: time
-      admin_ui: {width: 200}
-      type: datetime
-  dashboard:
-    title: dashboard
-    client: search
-    server: full
-    columns:
-    - name: results
-      admin_ui: {width: 552.000472}
-      type: simpleObject
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-  search_log:
-    title: search_log
-    client: none
-    server: full
-    columns:
-    - name: searched_at
-      admin_ui: {width: 200}
-      type: datetime
-    - name: addresses
-      admin_ui: {width: 200}
-      type: simpleObject
-    - name: results
-      admin_ui: {width: 200}
-      type: simpleObject
-  dashboard_reference:
-    title: dashboard_reference
-    client: none
-    server: full
-    columns:
-    - name: latest
-      admin_ui: {width: 200}
-      type: link_single
-      target: team_dashboard
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-  team_dashboard:
-    title: team_dashboard
-    client: none
-    server: full
-    columns:
-    - name: timestamp
-      admin_ui: {width: 200}
-      type: datetime
-    - name: TEAM Liquid
-      admin_ui: {width: 200}
-      type: number
-    - name: TEAM Staked
-      admin_ui: {width: 200}
-      type: number
-    - name: MAXI Minted into TEAM
-      admin_ui: {width: 200}
-      type: number
-    - name: BASE Minted
-      admin_ui: {width: 200}
-      type: number
-    - name: TRIO Minted
-      admin_ui: {width: 200}
-      type: number
-    - name: LUCKY Minted
-      admin_ui: {width: 200}
-      type: number
-    - name: DECI Minted
-      admin_ui: {width: 200}
-      type: number
-secrets:
-  WEB3_INFURA_PROJECT_ID:
-    value: {? '' : f1GOG8x91cx6sr/KqAZ0Vv630eoxtWjpuzRoqgu67+Y5PB3udkmN3bh5BY07keTLwzOpea03eP4o7oFqpoBlBpbpx44BrmX9EPAg8jm6DZQw1o0Yd2xb7nXz+INaRyCrCwR+BxINjBSfiaWZY7xLtV54S/lK+10=}
-    type: secret
-  WEB3_INFURA_API_SECRET:
-    value: {? '' : ARPyAM7QXk/VURisttBZWSwkn05inWsbU4JOeDebCKsOdoM4AZEe0nzaBoYNT97NEjJ5stym4Su0GlMxXJZBuPlP8wSUeYQMTx5+K4gUPgjeX1KQMHWwbP63LyryGlmnR7ggZJFnicSgg4IDZ1RqgxSgtM7EsDQ=}
-    type: secret
+package_name: Maximus_Dapp
 renamed: true
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-full, version: 2}
+scheduled_tasks:
+- job_id: ORDNNATT
+  task_name: record_results
+  time_spec:
+    at: {minute: 0}
+    every: hour
+    n: 1
+- job_id: MRXECPPE
+  task_name: record_results
+  time_spec:
+    at: {}
+    every: minute
+    n: 4
+secrets:
+  WEB3_INFURA_API_SECRET:
+    type: secret
+    value: {? '' : ARPyAM7QXk/VURisttBZWSwkn05inWsbU4JOeDebCKsOdoM4AZEe0nzaBoYNT97NEjJ5stym4Su0GlMxXJZBuPlP8wSUeYQMTx5+K4gUPgjeX1KQMHWwbP63LyryGlmnR7ggZJFnicSgg4IDZ1RqgxSgtM7EsDQ=}
+  WEB3_INFURA_PROJECT_ID:
+    type: secret
+    value: {? '' : f1GOG8x91cx6sr/KqAZ0Vv630eoxtWjpuzRoqgu67+Y5PB3udkmN3bh5BY07keTLwzOpea03eP4o7oFqpoBlBpbpx44BrmX9EPAg8jm6DZQw1o0Yd2xb7nXz+INaRyCrCwR+BxINjBSfiaWZY7xLtV54S/lK+10=}
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
+startup: {module: Main_copy_copy, type: form}
+startup_form: null

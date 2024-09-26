@@ -27,6 +27,8 @@ class stake(stakeTemplate):
     except Exception as e:
       raise e
   def refresh_page(self):
+    print(dir(self.team_contract))
+    print(self.address)
     self.team_balance =int(self.team_contract.balanceOf(self.address).toString())
     self.label_team_balance.text = '{:,.8f} ❇️'.format(int(self.team_balance)/100000000)
     self.team_staked = int(self.team_contract.USER_AMOUNT_STAKED(self.address).toString())

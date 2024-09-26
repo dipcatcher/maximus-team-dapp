@@ -1,44 +1,39 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-    visible: true, text: 'When the stake period ends, someone needs to run the Prepare
-      Rewards function which will transfer the tokens from the TEAM contract to the
-      Reward Distribution Contract and activate Rewards Claiming.', font_size: null,
-    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false, icon: ''}
+- layout_properties: {grid_position: 'KNMFLC,EKCYSV'}
   name: label_1
-  layout_properties: {grid_position: 'KNMFLC,EKCYSV'}
-- type: ColumnPanel
-  properties: {role: card, col_widths: '{}'}
-  name: card_1
-  layout_properties: {grid_position: 'EQEROI,HRLULA'}
-  components:
-  - type: DataGrid
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'When the stake period ends, someone needs to run the Prepare Rewards function which will transfer the tokens from the TEAM contract to the Reward Distribution Contract and activate Rewards Claiming.', tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - components:
+    - layout_properties: {}
+      name: repeating_panel_1
+      properties: {item_template: management.RowTemplate9, spacing_above: none, spacing_below: none}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'ALZKAH,TQEROV'}
+    name: data_grid_1
     properties:
-      role: null
-      columns:
-      - {id: ZNEIEQ, title: Token, data_key: Token, $$hashKey: 'object:6171'}
-      - {id: KXXTOX, title: Balance, data_key: Balance, $$hashKey: 'object:6172'}
-      - {id: WSTCWD, title: '', data_key: '', $$hashKey: 'object:6173'}
       auto_header: true
-      tooltip: ''
+      background: ''
       border: ''
+      columns:
+      - {$$hashKey: 'object:6171', data_key: Token, id: ZNEIEQ, title: Token}
+      - {$$hashKey: 'object:6172', data_key: Balance, id: KXXTOX, title: Balance}
+      - {$$hashKey: 'object:6173', data_key: '', id: WSTCWD, title: ''}
       foreground: ''
+      role: null
       rows_per_page: 20
-      visible: true
-      wrap_on: never
       show_page_controls: true
       spacing_above: small
       spacing_below: small
-      background: ''
-    name: data_grid_1
-    layout_properties: {grid_position: 'ALZKAH,TQEROV'}
-    components:
-    - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: management.RowTemplate9}
-      name: repeating_panel_1
-      layout_properties: {}
+      tooltip: ''
+      visible: true
+      wrap_on: never
+    type: DataGrid
+  layout_properties: {grid_position: 'EQEROI,HRLULA'}
+  name: card_1
+  properties: {col_widths: '{}', role: card}
+  type: ColumnPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

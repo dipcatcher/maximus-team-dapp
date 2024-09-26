@@ -1,38 +1,36 @@
-container:
-  type: DataRowPanel
-  properties: {role: top-border, align: left, tooltip: '', border: '', foreground: '',
-    auto_display_data: true, visible: true, font_size: null, font: '', spacing_above: none,
-    spacing_below: none, italic: false, background: '', bold: false, underline: false}
 components:
-- type: ColumnPanel
-  properties: {}
+- layout_properties: {column: AGUQLR}
   name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+- components: []
   layout_properties: {column: AGUQLR}
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
   name: column_panel_1
-  layout_properties: {column: AGUQLR}
-  components: []
-- type: DropDown
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {column: FKRPTW}
+  name: drop_down_menu
   properties:
-    role: null
     align: full
-    tooltip: ''
-    placeholder: Manage Stake
-    border: ''
-    enabled: true
-    foreground: ''
-    items: ['']
-    visible: true
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: small
-    italic: false
     background: white
     bold: false
-    underline: false
+    border: ''
+    enabled: true
+    font: ''
+    font_size: null
+    foreground: ''
     include_placeholder: true
-  name: drop_down_menu
-  layout_properties: {column: FKRPTW}
+    italic: false
+    items: ['']
+    placeholder: Manage Stake
+    role: null
+    spacing_above: small
+    spacing_below: small
+    tooltip: ''
+    underline: false
+    visible: true
+  type: DropDown
+container:
+  properties: {align: left, auto_display_data: true, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', italic: false, role: top-border, spacing_above: none, spacing_below: none, tooltip: '', underline: false, visible: true}
+  type: DataRowPanel
 is_package: true

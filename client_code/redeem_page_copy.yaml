@@ -1,149 +1,124 @@
 components:
-- type: FlowPanel
-  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
-  name: flow_panel_5
-  layout_properties:
-    col_widths: {}
-    grid_position: UFQMHS,ZQUHAK
-  components:
-  - type: ColumnPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-      spacing_below: small, background: ''}
-    name: redeem_panel
-    layout_properties: {grid_position: 'AVCYHZ,ZMRFFF'}
-    components:
-    - type: FlowPanel
-      properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-        foreground: '', visible: true, spacing_above: small, spacing_below: small,
-        background: '#06132D'}
-      name: flow_panel_3_copy
-      layout_properties: {grid_position: 'VZYJGG,MRPEGH'}
-      components:
-      - type: ColumnPanel
-        properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-          spacing_below: small, background: '#0E1E45'}
-        name: card_1_copy_2
-        layout_properties: {grid_position: 'LWFEQZ,XWMMTE', width: 359.01599999999996,
-          expand: false}
-        components:
-        - type: ColumnPanel
-          properties: {col_widths: '{}'}
-          name: column_panel_3_copy
-          layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
-          components:
-          - type: Label
-            properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
-              visible: true, text: "Redeem 1 HEX \nper MAXI burnt", font_size: 24,
-              font: '', spacing_above: small, icon_align: left, spacing_below: small,
-              italic: false, background: '', bold: true, underline: false, icon: ''}
-            name: label_redeem_header
-            layout_properties:
+- components:
+  - components:
+    - components:
+      - components:
+        - components:
+          - layout_properties:
               col_widths: {}
               grid_position: RGQQUT,BQBSYS
-          - type: Label
-            properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-              visible: true, text: Burn MAXI, font_size: 16, font: '', spacing_above: small,
-              icon_align: left, spacing_below: small, italic: false, background: '',
-              bold: false, underline: false, icon: ''}
+            name: label_redeem_header
+            properties:
+              align: center
+              background: ''
+              bold: true
+              border: ''
+              font: ''
+              font_size: 24
+              foreground: white
+              icon: ''
+              icon_align: left
+              italic: false
+              role: null
+              spacing_above: small
+              spacing_below: small
+              text: "Redeem 1 HEX \nper MAXI burnt"
+              tooltip: ''
+              underline: false
+              visible: true
+            type: Label
+          - layout_properties: {grid_position: 'RENGWR,KPYTPK'}
             name: label_4_copy
-            layout_properties: {grid_position: 'RENGWR,KPYTPK'}
-          - type: XYPanel
-            properties: {height: 54}
-            name: xy_panel_1_copy
-            layout_properties: {grid_position: 'SUQMRD,RKKMUT'}
-            components:
-            - type: TextBox
-              properties: {role: null, align: left, hide_text: false, tooltip: '',
-                placeholder: '100000', border: '', enabled: true, foreground: white,
-                visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-                type: number, spacing_below: small, italic: false, background: '#06132D',
-                bold: false, underline: false}
-              name: text_box_redeem_maxi
+            properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Burn MAXI, tooltip: '', underline: false, visible: true}
+            type: Label
+          - components:
+            - event_bindings: {change: text_box_redeem_maxi_change}
               layout_properties:
                 col_widths: {}
+                col_xs: 0
                 grid_position: GCWCKS,CODDJL
                 row: BFZIWT
+                width: 329.01
                 width_xs: 12
-                col_xs: 0
                 x: 0
                 y: 7.9687999999999874
-                width: 329.01
-              event_bindings: {change: text_box_redeem_maxi_change}
-            - type: Link
-              properties: {role: null, url: '', align: left, tooltip: '', border: '',
-                foreground: '#8E97CD', visible: true, text: Ⓜ️ max, font_size: 16,
-                wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
-                icon_align: left, col_widths: '{}', spacing_below: small, italic: false,
-                background: '', bold: false, underline: false, icon: ''}
-              name: link_max_maxi
-              layout_properties: {grid_position: 'VBTACA,KTZXFE', row: HRKDVQ, width_xs: 4,
-                col_xs: 2, x: 259.9930725097656, y: 7.96875, width: 60.0174}
-              components: []
+              name: text_box_redeem_maxi
+              properties: {align: left, background: '#06132D', bold: false, border: '', enabled: true, font: '', font_size: 16, foreground: white, hide_text: false, italic: false, placeholder: '100000', role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: number, underline: false, visible: true}
+              type: TextBox
+            - components: []
               event_bindings: {click: link_max_maxi_click}
-          - type: FlowPanel
-            properties: {}
-            name: flow_panel_1_copy_2
-            layout_properties: {row: HRKDVQ, width_xs: 12, col_xs: 0, grid_position: 'ZKSZOP,QKFCMW'}
-            components:
-            - type: Label
-              properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-                visible: true, text: 'MAXI Balance:', font_size: 16, font: '', spacing_above: small,
-                icon_align: left, spacing_below: small, italic: false, background: '',
-                bold: false, underline: false, icon: ''}
+              layout_properties: {col_xs: 2, grid_position: 'VBTACA,KTZXFE', row: HRKDVQ, width: 60.0174, width_xs: 4, x: 259.9930725097656, y: 7.96875}
+              name: link_max_maxi
+              properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '{}', font: '', font_size: 16, foreground: '#8E97CD', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Ⓜ️ max, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+              type: Link
+            layout_properties: {grid_position: 'SUQMRD,RKKMUT'}
+            name: xy_panel_1_copy
+            properties: {height: 54}
+            type: XYPanel
+          - components:
+            - layout_properties: {col_xs: 0, grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ, width_xs: 2}
               name: label_3_copy_2
-              layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
-                width_xs: 2, col_xs: 0}
-            - type: Label
-              properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-                visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-                icon_align: left, spacing_below: small, italic: false, background: '',
-                bold: false, underline: false, icon: ''}
+              properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'MAXI Balance:', tooltip: '', underline: false, visible: true}
+              type: Label
+            - layout_properties: {}
               name: link_maxi_balance
-              layout_properties: {}
-          - type: FlowPanel
-            properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
-              foreground: '', visible: true, spacing_above: small, spacing_below: small,
-              background: ''}
-            name: flow_panel_1_copy_3
+              properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+              type: Label
+            layout_properties: {col_xs: 0, grid_position: 'ZKSZOP,QKFCMW', row: HRKDVQ, width_xs: 12}
+            name: flow_panel_1_copy_2
+            properties: {}
+            type: FlowPanel
+          - components:
+            - layout_properties: {col_xs: 0, grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ, width_xs: 2}
+              name: label_3_copy_3
+              properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'HEX balance: ', tooltip: '', underline: false, visible: true}
+              type: Label
+            - layout_properties: {}
+              name: label_redeem_hex_balance
+              properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+              type: Label
             layout_properties:
               col_widths: {}
               grid_position: TFHPKP,OIENCV
-            components:
-            - type: Label
-              properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-                visible: true, text: 'HEX balance: ', font_size: 16, font: '', spacing_above: small,
-                icon_align: left, spacing_below: small, italic: false, background: '',
-                bold: false, underline: false, icon: ''}
-              name: label_3_copy_3
-              layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
-                width_xs: 2, col_xs: 0}
-            - type: Label
-              properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-                visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-                icon_align: left, spacing_below: small, italic: false, background: '',
-                bold: false, underline: false, icon: ''}
-              name: label_redeem_hex_balance
-              layout_properties: {}
-          - type: Button
-            properties: {role: null, align: full, tooltip: '', border: '', enabled: false,
-              foreground: white, visible: true, text: REDEEM HEX, font_size: 16, font: '',
-              spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-              background: '#246BFD', bold: true, underline: false, icon: ''}
-            name: button_redeem_hex
+            name: flow_panel_1_copy_3
+            properties: {align: left, background: '', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+            type: FlowPanel
+          - event_bindings: {click: button_redeem_hex_click}
             layout_properties:
               col_widths: {}
+              col_xs: 0
               grid_position: ZZYQAQ,XNGQDV
               row: WSYKAQ
-              width_xs: 12
-              col_xs: 0
               width: 329.01
-            event_bindings: {click: button_redeem_hex_click}
-        - type: GridPanel
-          properties: {}
-          name: grid_panel_1_copy
+              width_xs: 12
+            name: button_redeem_hex
+            properties: {align: full, background: '#246BFD', bold: true, border: '', enabled: false, font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: REDEEM HEX, tooltip: '', underline: false, visible: true}
+            type: Button
+          layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
+          name: column_panel_3_copy
+          properties: {col_widths: '{}'}
+          type: ColumnPanel
+        - components: []
           layout_properties: {grid_position: 'SMUQWR,KYNEYE', width: 365.01599999999996}
-          components: []
+          name: grid_panel_1_copy
+          properties: {}
+          type: GridPanel
+        layout_properties: {expand: false, grid_position: 'LWFEQZ,XWMMTE', width: 359.01599999999996}
+        name: card_1_copy_2
+        properties: {background: '#0E1E45', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+        type: ColumnPanel
+      layout_properties: {grid_position: 'VZYJGG,MRPEGH'}
+      name: flow_panel_3_copy
+      properties: {align: center, background: '#06132D', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+      type: FlowPanel
+    layout_properties: {grid_position: 'AVCYHZ,ZMRFFF'}
+    name: redeem_panel
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  layout_properties:
+    col_widths: {}
+    grid_position: UFQMHS,ZQUHAK
+  name: flow_panel_5
+  properties: {align: center, background: '', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+  type: FlowPanel
 container: {type: ColumnPanel}

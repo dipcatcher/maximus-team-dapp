@@ -35,6 +35,7 @@ class stake_list(stake_listTemplate):
         mapping(uint => uint256) stakedTeamPerPeriod; // A record of the number of TEAM that successfully served each staking period during this stake. This number crystallizes as each staking period ends and is used to claim rewards.
         bool initiated;
     }'''
+    
     stake_record = self.team_contract.stakes(user, stakeID)
     
     d_stake_record = {}
