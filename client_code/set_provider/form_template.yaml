@@ -1,5 +1,5 @@
-container:
-  type: ColumnPanel
-  event_bindings: {}
 components: []
+container:
+  event_bindings: {}
+  type: ColumnPanel
 is_package: true

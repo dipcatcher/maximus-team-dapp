@@ -1,15 +1,12 @@
-container: {type: DataRowPanel}
 components:
-- type: Link
-  properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: cyan,
-    visible: true, text: claim, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: link_claim
+- event_bindings: {click: link_claim_click}
   layout_properties: {column: UDIEGZ}
-  event_bindings: {click: link_claim_click}
-- type: Label
-  properties: {}
+  name: link_claim
+  properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: cyan, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: claim, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+  type: Link
+- layout_properties: {column: UBPTUE}
   name: label_claimable
-  layout_properties: {column: UBPTUE}
+  properties: {}
+  type: Label
+container: {type: DataRowPanel}
 is_package: true

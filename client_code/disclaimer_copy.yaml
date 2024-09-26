@@ -1,39 +1,39 @@
 components:
-- type: ColumnPanel
-  properties: {role: card, col_widths: '{}'}
-  name: card_1
-  layout_properties: {grid_position: 'HOAOWB,NMRYAR'}
-  components:
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'THE MAXIMUS CONTRACT, SUPPORTING WEBSITES, AND ALL OTHER
-        INTERFACES (THE SOFTWARE) IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
-        WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-        MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
-        SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
-        RESULTING FROM
-
-        LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
-        OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-        PERFORMANCE OF THIS SOFTWARE.
-
-
-        BY INTERACTING WITH THE SOFTWARE YOU ARE ASSERTING THAT YOU BEAR ALL THE RISKS
-        ASSOCIATED WITH DOING SO. AN INFINITE NUMBER OF UNPREDICTABLE THINGS MAY OCCUR
-        WHICH COULD POTENTIALLY RESULT IN LOSS AND FAILURE, AND BY INTERACTING WITH
-        THE SOFTWARE YOU ARE ASSERTING THAT YOU AGREE THERE IS NO RECOURSE AVAILABLE
-        AND YOU WILL NOT SEEK IT.
-
-
-
-        REGARDING MAXIMUS, YOU SHALL HAVE NO EXPECTATION OF PROFIT OR ANY TYPE OF
-        SUCCESS FROM THE WORK OF OTHER PEOPLE.', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_1
-    layout_properties:
+- components:
+  - layout_properties:
       col_widths: {}
       grid_position: HHVKJZ,HRRCTN
-container:
+    name: label_1
+    properties:
+      align: left
+      background: ''
+      bold: false
+      border: ''
+      font: ''
+      font_size: null
+      foreground: ''
+      icon: ''
+      icon_align: left
+      italic: false
+      role: null
+      spacing_above: small
+      spacing_below: small
+      text: |-
+        THE MAXIMUS CONTRACT, SUPPORTING WEBSITES, AND ALL OTHER INTERFACES (THE SOFTWARE) IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+        LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+        BY INTERACTING WITH THE SOFTWARE YOU ARE ASSERTING THAT YOU BEAR ALL THE RISKS ASSOCIATED WITH DOING SO. AN INFINITE NUMBER OF UNPREDICTABLE THINGS MAY OCCUR WHICH COULD POTENTIALLY RESULT IN LOSS AND FAILURE, AND BY INTERACTING WITH THE SOFTWARE YOU ARE ASSERTING THAT YOU AGREE THERE IS NO RECOURSE AVAILABLE AND YOU WILL NOT SEEK IT.
+
+
+        REGARDING MAXIMUS, YOU SHALL HAVE NO EXPECTATION OF PROFIT OR ANY TYPE OF SUCCESS FROM THE WORK OF OTHER PEOPLE.
+      tooltip: ''
+      underline: false
+      visible: true
+    type: Label
+  layout_properties: {grid_position: 'HOAOWB,NMRYAR'}
+  name: card_1
+  properties: {col_widths: '{}', role: card}
   type: ColumnPanel
+container:
   properties: {col_widths: '{}'}
+  type: ColumnPanel

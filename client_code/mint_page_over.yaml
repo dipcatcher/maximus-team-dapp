@@ -1,205 +1,142 @@
 components:
-- type: Label
-  properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
-    visible: true, text: MAXI Minting Phase is Over, font_size: 24, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-    underline: false, icon: ''}
-  name: label_2_copy_4
-  layout_properties:
+- layout_properties:
     col_widths: {}
     grid_position: WYPRRU,LJQGIL
-- type: FlowPanel
-  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: '#06132D'}
-  name: flow_panel_3
-  layout_properties:
-    col_widths: {}
-    grid_position: KGUUIH,UVJKAA
-  components:
-  - type: ColumnPanel
-    properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-      spacing_below: small, background: '#0E1E45'}
-    name: card_1
-    layout_properties: {grid_position: 'LWFEQZ,XWMMTE', width: 359.01599999999996,
-      expand: false}
-    components:
-    - type: ColumnPanel
-      properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-        spacing_below: small, background: ''}
-      name: column_panel_3
-      layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
-      components:
-      - type: Label
-        properties: {role: null, align: center, tooltip: '', border: '', foreground: '#8E97CD',
-          visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-          underline: false, icon: ''}
-        name: label_mint_duration
-        layout_properties:
+  name: label_2_copy_4
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 24, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: MAXI Minting Phase is Over, tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - components:
+    - components:
+      - layout_properties:
           col_widths: {}
           grid_position: OGZHBN,ZWCBQX
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-          visible: true, text: Pledge HEX, font_size: 16, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-          underline: false, icon: ''}
+        name: label_mint_duration
+        properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 16, foreground: '#8E97CD', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+        type: Label
+      - layout_properties: {grid_position: 'RENGWR,KPYTPK'}
         name: label_4
-        layout_properties: {grid_position: 'RENGWR,KPYTPK'}
-      - type: Link
-        properties: {role: null, url: 'https://app.uniswap.org/#/swap?inputCurrency=0x2b591e99afe9f32eaa6214f7b7629768c40eeb39&outputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&chain=mainnet',
-          align: center, tooltip: '', border: '', foreground: cyan, visible: true,
-          text: 'Need Hex?', font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-          spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
-          italic: false, background: '', bold: false, underline: false, icon: ''}
-        name: link_need_hex
-        layout_properties: {grid_position: 'RENGWR,PFKXXC'}
+        properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Pledge HEX, tooltip: '', underline: false, visible: true}
+        type: Label
+      - components: []
         event_bindings: {}
-        components: []
-      - type: XYPanel
-        properties: {height: 54}
-        name: xy_panel_1
-        layout_properties: {grid_position: 'SUQMRD,RKKMUT'}
-        components:
-        - type: TextBox
-          properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-            border: '', enabled: true, foreground: white, visible: true, text: '',
-            font_size: 16, font: '', spacing_above: small, type: number, spacing_below: small,
-            italic: false, background: '#06132D', bold: false, underline: false}
-          name: text_box_1
+        layout_properties: {grid_position: 'RENGWR,PFKXXC'}
+        name: link_need_hex
+        properties: {align: center, background: '', bold: false, border: '', col_spacing: medium, col_widths: '{}', font: '', font_size: null, foreground: cyan, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Need Hex?', tooltip: '', underline: false, url: 'https://app.uniswap.org/#/swap?inputCurrency=0x2b591e99afe9f32eaa6214f7b7629768c40eeb39&outputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&chain=mainnet', visible: true, wrap_on: mobile}
+        type: Link
+      - components:
+        - event_bindings: {change: text_box_1_change, pressed_enter: text_box_1_pressed_enter}
           layout_properties:
             col_widths: {}
+            col_xs: 0
             grid_position: GCWCKS,CODDJL
             row: BFZIWT
+            width: 329.01723725097656
             width_xs: 12
-            col_xs: 0
             x: 0
             y: 7.96875
-            width: 329.01723725097656
-          event_bindings: {change: text_box_1_change, pressed_enter: text_box_1_pressed_enter}
-        - type: Link
-          properties: {role: null, url: '', align: left, tooltip: '', border: '',
-            foreground: '#8E97CD', visible: true, text: ⬣ max, font_size: 16, wrap_on: mobile,
-            font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-            col_widths: '{}', spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
-          name: link_max_hex
-          layout_properties: {grid_position: 'VBTACA,KTZXFE', row: HRKDVQ, width_xs: 4,
-            col_xs: 2, x: 268.99305725097656, y: 7.96875, width: 60.01764274902346}
-          components: []
+          name: text_box_1
+          properties: {align: left, background: '#06132D', bold: false, border: '', enabled: true, font: '', font_size: 16, foreground: white, hide_text: false, italic: false, placeholder: '', role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: number, underline: false, visible: true}
+          type: TextBox
+        - components: []
           event_bindings: {click: link_hex_balance_click}
-      - type: FlowPanel
-        properties: {}
-        name: flow_panel_1
-        layout_properties: {row: HRKDVQ, width_xs: 12, col_xs: 0, grid_position: 'ZKSZOP,QKFCMW'}
-        components:
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-            visible: true, text: 'HEX balance: ', font_size: 16, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
+          layout_properties: {col_xs: 2, grid_position: 'VBTACA,KTZXFE', row: HRKDVQ, width: 60.01764274902346, width_xs: 4, x: 268.99305725097656, y: 7.96875}
+          name: link_max_hex
+          properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '{}', font: '', font_size: 16, foreground: '#8E97CD', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: ⬣ max, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+          type: Link
+        layout_properties: {grid_position: 'SUQMRD,RKKMUT'}
+        name: xy_panel_1
+        properties: {height: 54}
+        type: XYPanel
+      - components:
+        - layout_properties: {col_xs: 0, grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ, width_xs: 2}
           name: label_3
-          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
-            width_xs: 2, col_xs: 0}
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'HEX balance: ', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {}
           name: link_hex_balance
-          layout_properties: {}
-      - type: FlowPanel
-        properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
-          foreground: '', visible: true, spacing_above: small, spacing_below: small,
-          background: ''}
-        name: flow_panel_1_copy
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        layout_properties: {col_xs: 0, grid_position: 'ZKSZOP,QKFCMW', row: HRKDVQ, width_xs: 12}
+        name: flow_panel_1
+        properties: {}
+        type: FlowPanel
+      - components:
+        - layout_properties: {col_xs: 0, grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ, width_xs: 2}
+          name: label_3_copy
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'MAXI balance: ', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {}
+          name: label_maxi_balance
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
         layout_properties:
           col_widths: {}
           grid_position: TFHPKP,OIENCV
-        components:
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-            visible: true, text: 'MAXI balance: ', font_size: 16, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
-          name: label_3_copy
-          layout_properties: {grid_position: 'EBKBPD,AIFZPK MMTTDT,UEWXAX', row: PAURJQ,
-            width_xs: 2, col_xs: 0}
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-            visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
-          name: label_maxi_balance
-          layout_properties: {}
-      - type: ColumnPanel
-        properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-          spacing_below: small, background: ''}
-        name: column_panel_2
-        layout_properties: {grid_position: 'JBLOTM,WHGUPN'}
-        components:
-        - type: Label
-          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-            visible: true, text: 'First, maximus needs your permission to interact
-              with {} of your HEX.', font_size: 16, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: true, underline: false, icon: ''}
+        name: flow_panel_1_copy
+        properties: {align: left, background: '', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+        type: FlowPanel
+      - components:
+        - layout_properties: {grid_position: 'GYMSVO,QNLITX'}
           name: label_1
-          layout_properties: {grid_position: 'GYMSVO,QNLITX'}
-        - type: Link
-          properties: {role: null, url: '', align: center, tooltip: '', border: '',
-            foreground: '#8B95CA', visible: true, text: 'Why do I have to do this?',
-            font_size: 16, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
-            icon_align: left, col_widths: '', spacing_below: small, italic: false,
-            background: '', bold: false, underline: false, icon: ''}
-          name: link_3
+          properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 16, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'First, maximus needs your permission to interact with {} of your HEX.', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {click: link_3_click}
           layout_properties: {grid_position: 'LCCSSP,UMDTIL'}
-          event_bindings: {click: link_3_click}
-        - type: Button
-          properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
-            foreground: white, visible: true, text: 'APPROVE {} HEX', font_size: 16,
-            font: '', spacing_above: small, icon_align: left, spacing_below: small,
-            italic: false, background: '#246BFD', bold: true, underline: false, icon: ''}
-          name: button_2_copy
+          name: link_3
+          properties: {align: center, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 16, foreground: '#8B95CA', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Why do I have to do this?', tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+          type: Link
+        - event_bindings: {click: button_2_copy_click}
           layout_properties:
             col_widths: {}
             grid_position: ZXGIGG,FWQMTB
-          event_bindings: {click: button_2_copy_click}
-      - type: Button
-        properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
-          foreground: white, visible: true, text: MINT MAXI, font_size: 16, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '#246BFD', bold: true, underline: false, icon: ''}
-        name: button_2
+          name: button_2_copy
+          properties: {align: full, background: '#246BFD', bold: true, border: '', enabled: true, font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'APPROVE {} HEX', tooltip: '', underline: false, visible: true}
+          type: Button
+        layout_properties: {grid_position: 'JBLOTM,WHGUPN'}
+        name: column_panel_2
+        properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+        type: ColumnPanel
+      - event_bindings: {click: button_2_click}
         layout_properties:
           col_widths: {}
+          col_xs: 0
           grid_position: ZZYQAQ,XNGQDV
           row: WSYKAQ
-          width_xs: 12
-          col_xs: 0
           width: 329.01
-        event_bindings: {click: button_2_click}
-      - type: Link
-        properties: {role: null, url: '', align: center, tooltip: '', border: '',
-          foreground: '#8E97CD', visible: true, text: Add MAXI to MetaMask, font_size: null,
-          wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-          col_widths: '', spacing_below: small, italic: false, background: '', bold: false,
-          underline: false, icon: ''}
-        name: link_1_copy
+          width_xs: 12
+        name: button_2
+        properties: {align: full, background: '#246BFD', bold: true, border: '', enabled: true, font: '', font_size: 16, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: MINT MAXI, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: link_1_copy_click}
         layout_properties:
           col_widths: {}
+          col_xs: 2
           grid_position: MIOZAP,AFLYSX
           row: OPBXFF
           width_xs: 8
-          col_xs: 2
-        event_bindings: {click: link_1_copy_click}
-    - type: GridPanel
-      properties: {}
-      name: grid_panel_1
+        name: link_1_copy
+        properties: {align: center, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '#8E97CD', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Add MAXI to MetaMask, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+        type: Link
+      layout_properties: {grid_position: 'ELCFFH,WOAWRS'}
+      name: column_panel_3
+      properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+      type: ColumnPanel
+    - components: []
       layout_properties: {grid_position: 'SMUQWR,KYNEYE', width: 365.01599999999996}
-      components: []
+      name: grid_panel_1
+      properties: {}
+      type: GridPanel
+    layout_properties: {expand: false, grid_position: 'LWFEQZ,XWMMTE', width: 359.01599999999996}
+    name: card_1
+    properties: {background: '#0E1E45', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+    type: ColumnPanel
+  layout_properties:
+    col_widths: {}
+    grid_position: KGUUIH,UVJKAA
+  name: flow_panel_3
+  properties: {align: center, background: '#06132D', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+  type: FlowPanel
 container:
-  type: ColumnPanel
   properties: {col_widths: '{}'}
+  type: ColumnPanel
